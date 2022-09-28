@@ -1,1 +1,2 @@
-# Project
+My first repo
+Noroff

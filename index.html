@@ -13,34 +13,32 @@
         <br>
         <b>Sanitization of data</b>
         <br>
-        This practice involves ensuring that the data a system accepts is in the right format. This can be done manually or by using a well-known third-party solution. For example, in NodeJS, you have the sanitize-html package for sanitizing HTML code, and it is downloaded over a million times per week. There is also an ORM(Object Related Mapping) library for sanitizing the SQL related code.
+        Make sure that the data or input your site accepts is in the right format.
+        You can do this manually or use third-party solutions.
         <br>
         <br>
-        <b>Secure authorization and authentication</b>
+        <b>Secure authorization</b>
         <br>
-        This involves ensuring that authorization and authentication are hard to crack. This can be done manually but can be best achieved by using an open-standard authorization protocol or framework such as OneLogin, Okta, etc.
-        <br>
-        <br>
-        <b>Make use of a well-known third-party application.</b>
-        <br>
-        This involves ensuring that a third-party application is trusted and tested. One might need to carry out some research about the application before it can be used. An easier way to do that is to check how many downloads the application gets per week.
+        Ensure that authorization is secure. Secure authentication of the user is important to make sure no one can hack into your site. You can also do this manually, but it is best that you use well known authorization solutions, like the industry-standard OAuth.
         <br>
         <br>
-        <b>Continuous Deployment/Continuous Integration (CI/CD)</b>
+        <b>Use well know third-party apps</b>
         <br>
-        Continuous Deployment/Continuous Integration is an automatic process of integrating and delivering code to production. Usually, CI/CD runs every change against some security checks and decides the delivery of the change to productions. Any change that does not pass the checks would be rejected and flagged for a rework. It basically catches oversights from developers and helps maintain the reliability of the changes coming to a codebase.
+        If you use third-party solutions for your site, make sure they are well-known and do research to make sure it is safe to use.
         <br>
-        There are different CI/CD tools that teams across the globe integrate into their pipeline. They include Github Action, Jenkins, Travis CI, Circle CI, etc
+        <br>
+        <b>CI/CD</b>
+        <br>
+        Protect changes on your site by using Continuous Deployment/Continuous Integration.
+        With CI/CD every change you make to the site will have to go through security checks before delivering the changes to production.
         <br>
         <br>
         <b>Network security </b>
         <br>
-        A network is the connection of nodes via wired or wireless means in order to share data across nodes. Network security is the act of protecting the exchange of packets of data across the network.
-        
-        A network engineer is the one responsible for network security. However, a front-end developer must be wary of what network to connect to as well as where to host the website. Data could be compromised via the hosting platform.
+        Be wary of where you host the site. Do research into the hosting service before choosing. If the hosting service has bad network security your data could easily be compromised on the hosting service.
         <br>
         <br>
-        <b>Implementation of automatic user timeout</b>
-        This involves protecting users who have left their credentials hanging in the browser for a long time. In most cases, this would be done by the backend team by setting a session for the expiration of the user credentials. However, as a front-end developer, you have to ensure that the API you are consuming has put this into consideration. </p>
+        <b>Timeout</b>
+        Use automatic timeout for users. If the user has put in credentials or other info on the site, make sure the site times out the session after a given amount of time. This protects the user. </p>
   </body>
 </html>

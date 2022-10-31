@@ -1,3 +1,58 @@
 h1 {
-  font-family: "Bebas Neue";
+  font-family: "Bebas Neue", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.cta-button {
+  text-decoration: none;
+  background-color: #caefd3;
+}
+
+header {
+  background-color: #7aa385;
+  border: black;
+  box-shadow: 0px 0px 3px 0px black inset;
+  padding: 0.5px;
+}
+
+.navtext {
+  color: #0a3641;
+  font-family: "Bebas Neue", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: larger;
+  position: sticky;
+  left: 1250px;
+  padding-right: 10px;
+}
+
+nav li {
+  display: inline-block;
+  font-family: "Bebas Neue", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+nav a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: larger;
+  padding: 10px;
+}
+
+.nav-button:hover {
+  background-color: #caefd377;
+}
+
+body {
+  background-image: url(../images/background-image.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+@media (max-width: 1166px) {
+  .navtext {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  header {
+    display: none;
+  }
 }

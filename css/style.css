@@ -39,10 +39,17 @@ nav a {
   background-color: #caefd377;
 }
 
+.logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+}
+
 body {
   background-image: url(../images/background-image.jpg);
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
 }
 
 @media (max-width: 1166px) {
@@ -54,5 +61,15 @@ body {
 @media (max-width: 600px) {
   header {
     display: none;
+  }
+
+  body {
+    background-size: auto;
+    background-position: center;
+    background-position-y: top;
+  }
+
+  .logo {
+    max-width: 80%;
   }
 }

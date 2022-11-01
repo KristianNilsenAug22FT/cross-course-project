@@ -2,6 +2,7 @@ html {
   background-image: url(../images/background-image.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  text-decoration: none;
   }
 
 h1 {
@@ -11,7 +12,31 @@ h1 {
 .cta-button {
   text-decoration: none;
   background-color: #caefd3;
+  width: 120px;
+  text-align: center;
+  color: #000000;
+  display: inline-block;
+  font-family: "Bebas Neue", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: x-large;
+  border-radius: 5px;
+  border: 1px solid white;
+  box-shadow: 3px 3px 20px 0px #000000;
+  padding-block: 5px;
+  padding-inline: 10px;
+ }
+
+.home-cta {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; 
+
 }
+
+.home-cta-spacing {
+  margin-inline: 100px;
+  margin-block: 10px;
+}
+
 
 header {
   background-color: #7aa385;
@@ -52,9 +77,57 @@ nav a {
   margin-top: 10px;
 }
 
+footer {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  background-color: #7aa385;
+  height: 25px;
+  text-align: center;
+  border: black;
+  box-shadow: 0px 0px 3px 0px black inset;
+  display: flex;
+  justify-content: center;
+  color: #0a3641;
+  text-decoration: none;
+}
 
+.footer {
+margin-inline: 20px;
+display: inline-block;
+}
 
-@media (max-width: 1166px) {
+.footerlink {
+  text-decoration: none;
+  color: #0a3641;
+  margin-left: ;
+}
+
+.quote-box {
+  float: right;
+ 
+}
+
+.quote {
+  background-color: #000000;
+  text-align: center;
+  opacity: 60%;
+  color: #ffffff;
+  width: 361px;
+  height: 220px;
+  font-size: medium;
+  font-style: italic;
+  font-family:Arial, Helvetica, sans-serif;
+  letter-spacing: 2px;
+}
+
+.position {
+ position: relative; 
+ top: 100px;
+}
+
+@media (max-width: 1200px) {
   .navtext {
     display: none;
   }

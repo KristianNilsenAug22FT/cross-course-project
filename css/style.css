@@ -1,3 +1,9 @@
+html {
+  background-image: url(../images/background-image.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  }
+
 h1 {
   font-family: "Bebas Neue", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -46,11 +52,7 @@ nav a {
   margin-top: 10px;
 }
 
-body {
-  background-image: url(../images/background-image.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
+
 
 @media (max-width: 1166px) {
   .navtext {
@@ -63,10 +65,10 @@ body {
     display: none;
   }
 
-  body {
+  html {
     background-size: auto;
     background-position: center;
-    background-position-y: top;
+    background-position: 50% 15%
   }
 
   .logo {

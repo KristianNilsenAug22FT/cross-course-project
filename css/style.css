@@ -1,15 +1,52 @@
-html {
+body {
   background-image: url(../images/background-image.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   text-decoration: none;
-  }
+}
+
+.men-background {
+  background-image: url(../images/background-men.jpg);
+}
+
+.women-background {
+  background-image: url(../images/background-women.jpg);
+}
+
+.jackets img {
+  width: 100%;
+  grid-column: -1/1;
+}
+
+.jackets {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  max-width: 1500px;
+  grid-gap: 40px;
+  margin: auto;
+}
+
+.jackets p {
+  font-family: "Bebas Neue", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 25px;
+}
+
+.jackets__spesific {
+  background-color: #caefd3;
+  color: #000000;
+  box-shadow: 1px 1px 10px 0px #000000;
+  border-radius: 10px;
+  text-align: center;
+  padding-bottom: 20px;
+  margin-bottom: 40px;
+}
 
 h1 {
   font-family: "Bebas Neue", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 40px;
   color: #0a3641;
-  margin-bottom: 0;
+  text-align: center;
+  text-decoration: underline;
 }
 
 .paragraph-margin {
@@ -30,7 +67,7 @@ h1 {
   box-shadow: 3px 3px 20px 0px #000000;
   padding-block: 5px;
   padding-inline: 10px;
- }
+}
 
 .submit {
   background-color: #caefd3;
@@ -45,7 +82,6 @@ h1 {
   border-radius: 5px;
   border: 1px solid white;
   box-shadow: 3px 3px 20px 0px #000000;
- 
 }
 
 form {
@@ -53,14 +89,16 @@ form {
 }
 
 .form__input {
-  display:block;
+  display: block;
   margin: auto;
   margin-bottom: 10px;
-
-  
 }
 
- .text-box {
+.jackets h1 {
+  grid-column: -1/1;
+}
+
+.text-box {
   margin-top: 40px;
   background-color: #caefd3;
   text-align: center;
@@ -71,13 +109,12 @@ form {
   flex-direction: column;
   font-family: Arial, Helvetica, sans-serif;
   font-variant: small-caps;
-  
 }
 
 .home-cta {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center; 
+  justify-content: center;
   margin-top: 100px;
 }
 
@@ -97,6 +134,7 @@ header {
   border: black;
   box-shadow: 0px 0px 3px 0px black inset;
   padding: 0.5px;
+  height: 58px;
 }
 
 .navtext {
@@ -148,8 +186,8 @@ footer {
 }
 
 .footer {
-margin-inline: 20px;
-display: inline-block;
+  margin-inline: 20px;
+  display: inline-block;
 }
 
 .footerlink {
@@ -159,7 +197,7 @@ display: inline-block;
 
 .quote-box {
   float: right;
- }
+}
 
 .quote {
   background-color: #000000;
@@ -170,16 +208,14 @@ display: inline-block;
   height: 220px;
   font-size: medium;
   font-style: italic;
-  font-family:Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   letter-spacing: 2px;
 }
 
 .position {
- position: relative; 
- top: 100px;
+  position: relative;
+  top: 100px;
 }
-
-
 
 @media (max-width: 1200px) {
   .navtext {
@@ -195,7 +231,7 @@ display: inline-block;
   html {
     background-size: auto;
     background-position: center;
-    background-position: 50% 15%
+    background-position: 50% 15%;
   }
 
   .logo {

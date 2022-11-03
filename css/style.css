@@ -1,8 +1,11 @@
 body {
+  text-decoration: none;
+}
+
+.regular-background {
   background-image: url(../images/background-image.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  text-decoration: none;
 }
 
 h1 {
@@ -123,7 +126,7 @@ footer {
 }
 
 @media (max-width: 600px) {
-  body {
+  .regular-background {
     background-size: auto;
     background-position: center;
     background-position: 50% 15%;
@@ -260,10 +263,14 @@ form {
 
 .men-background {
   background-image: url(../images/background-men.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .women-background {
   background-image: url(../images/background-women.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .jackets img {
@@ -309,15 +316,14 @@ form {
     width: 50%;
   }
 
-  .cta-button {
-    width: ;
-  }
-
-  body {
+  .women-background {
     background-size: cover;
     background-position: center;
-    background-position: 40% 15%;
+    background-position: 45% 15%;
+  }
+  .men-background {
+    background-size: cover;
+    background-position: center;
+    background-position: 41% 15%;
   }
 }
-
-/* Mobile view */

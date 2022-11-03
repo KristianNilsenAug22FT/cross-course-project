@@ -133,10 +133,14 @@ footer {
     max-width: 80%;
   }
 
-  footer {
-    padding-bottom: 20px;
+  .footer {
+    display: block;
   }
-}
+  footer {
+    padding-bottom: 40px;
+  }
+
+ 
 
 @media (min-width: 600px) {
   nav {

@@ -136,9 +136,7 @@ footer {
   .footer {
     display: block;
   }
-  
-
- 
+}
 
 @media (min-width: 600px) {
   nav {
@@ -298,6 +296,28 @@ form {
 
 .jackets h1 {
   grid-column: -1/1;
+}
+
+@media (max-width: 600px) {
+  .jackets {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 600px;
+    margin: auto;
+  }
+  .jackets img {
+    width: 50%;
+  }
+
+  .cta-button {
+    width: ;
+  }
+
+  body {
+    background-size: cover;
+    background-position: center;
+    background-position: 40% 15%;
+  }
 }
 
 /* Mobile view */

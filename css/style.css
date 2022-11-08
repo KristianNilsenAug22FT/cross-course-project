@@ -223,6 +223,7 @@ footer {
   flex-direction: column;
   font-family: Arial, Helvetica, sans-serif;
   font-variant: small-caps;
+  flex: 1;
 }
 
 .back-button {
@@ -263,7 +264,7 @@ form {
   margin-block: 0;
 }
 
-/* Product page */
+/* Product lineup page */
 
 .men-background {
   background-image: url(../images/background-men.jpg);
@@ -317,9 +318,45 @@ form {
   background-color: #ffffff;
   border-radius: 50%;
   max-width: 100px;
-  margin:auto;
+  margin: auto;
   margin-bottom: 20px;
-  
+}
+
+.product {
+  display: flex;
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
+figure {
+  flex: 1;
+}
+
+.figuresmall {
+  display: none;
+}
+
+.text-box-product {
+  margin-top: 40px;
+  background-color: #caefd3;
+  color: #000000;
+  box-shadow: 1px 1px 10px 0px #000000;
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, Helvetica, sans-serif;
+  flex: 1;
+  padding: 20px;
+  line-height: 40px;
+  margin-bottom: 50px;
+}
+
+.product h2 {
+  font-size: 16px;
+}
+
+.product p {
+  font-size: 45px;
 }
 
 @media (max-width: 600px) {
@@ -342,5 +379,36 @@ form {
     background-size: cover;
     background-position: center;
     background-position: 41% 15%;
+  }
+
+  .product {
+    flex: none;
+    display: block;
+  }
+
+  .figurebig {
+    display: none;
+  }
+
+  .figuresmall {
+    display: block;
+    margin: auto;
+  }
+
+  .figuresmall img {
+    width: 300px;
+  }
+
+  .product p {
+    margin: auto;
+    margin-bottom: 30px;
+  }
+
+  .text-box-product {
+    margin-bottom: 40px;
+  }
+
+  .product a {
+    margin: auto;
   }
 }

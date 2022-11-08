@@ -200,6 +200,10 @@ footer {
   top: 100px;
 }
 
+.h1-home {
+  display: none;
+}
+
 @media (max-width: 600px) {
   .quote-box {
     display: none;
@@ -306,6 +310,16 @@ form {
 
 .jackets h1 {
   grid-column: -1/1;
+}
+
+.jackets__spesific p {
+  color: #317c44;
+  background-color: #ffffff;
+  border-radius: 50%;
+  max-width: 100px;
+  margin:auto;
+  margin-bottom: 20px;
+  
 }
 
 @media (max-width: 600px) {

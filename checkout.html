@@ -39,23 +39,25 @@
             <input type="tel" name="phone" id="phone" class="checkout-form checkout-input" />
             <label for="email">email</label>
             <input type="email" name="email" id="email" class="checkout-form checkout-input" required />
-            <label for="email">Street</label>
-            <input type="email" name="email" id="email" class="checkout-form checkout-input" required />
-            <label for="email">House nr</label>
-            <input type="email" name="email" id="email" class="checkout-form checkout-input" required />
-            <label for="email">City</label>
-            <input type="email" name="email" id="email" class="checkout-form checkout-input" required />
-            <label for="email">Postal Code</label>
-            <input type="email" name="email" id="email" class="checkout-form checkout-input" required />
+            <label for="street">Street</label>
+            <input type="text" name="street" id="street" class="checkout-form checkout-input" required />
+            <label for="housenr">House nr</label>
+            <input type="number" name="housenr" id="housenr" class="checkout-form checkout-input" required />
+            <label for="city">City</label>
+            <input type="text" name="city" id="city" class="checkout-form checkout-input" required />
+            <label for="postcode">Postal Code</label>
+            <input type="number" name="postcode" id="postcode" class="checkout-form checkout-input" required />
           </fieldset>
           <fieldset>
             <legend>Payment information</legend>
-            <label for="name">CC number</label>
-            <input type="text" name="name" id="name" class="checkout-form checkout-input" required />
-            <label for="phone">Exp.date</label>
-            <input type="tel" name="phone" id="phone" class="checkout-form checkout-input" />
-            <label for="email">CVC-code</label>
-            <input type="email" name="email" id="email" class="checkout-form checkout-input" required />
+            <label for="creditcard">CC number</label>
+            <input type="number" name="creditcard" id="creditcard" class="checkout-form checkout-input" required />
+            <label for="date">Exp.date</label>
+            <input type="expdate" name="expdate" id="expdate" class="checkout-form checkout-input" />
+            <label for="month">Exp.month</label>
+            <input type="expmonth" name="expmonth" id="expmonth" class="checkout-form checkout-input" />
+            <label for="cvc">CVC-code</label>
+            <input type="number" name="cvc" id="cvc" class="checkout-form checkout-input" required />
           </fieldset>
         </form>
         <div class="checkout-button">

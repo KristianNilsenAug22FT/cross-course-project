@@ -16,6 +16,20 @@ h1 {
   text-decoration: underline;
 }
 
+.text-box {
+  margin-top: 40px;
+  background-color: #caefd3;
+  text-align: center;
+  color: #000000;
+  box-shadow: 1px 1px 10px 0px #000000;
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, Helvetica, sans-serif;
+  font-variant: small-caps;
+  flex: 1;
+}
+
 .cta-button {
   text-decoration: none;
   background-color: #caefd3;
@@ -125,7 +139,7 @@ footer {
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 1300px) {
   .regular-background {
     background-size: auto;
     background-position: center;
@@ -139,6 +153,10 @@ footer {
   .footer {
     display: block;
   }
+
+  nav a {
+    color: #ffffff;
+  }
 }
 
 @media (min-width: 600px) {
@@ -149,6 +167,7 @@ footer {
     padding-right: 0px;
     line-height: initial;
   }
+
   nav li {
     display: inline;
   }
@@ -204,7 +223,7 @@ footer {
   display: none;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 720px) {
   .quote-box {
     display: none;
   }
@@ -212,7 +231,7 @@ footer {
 
 /* About page */
 
-.text-box {
+.about-text-box {
   margin-top: 40px;
   background-color: #caefd3;
   text-align: center;
@@ -223,7 +242,9 @@ footer {
   flex-direction: column;
   font-family: Arial, Helvetica, sans-serif;
   font-variant: small-caps;
-  flex: 1;
+  margin: auto;
+  max-width: 800px;
+  margin-top: 40px;
 }
 
 .back-button {
@@ -248,6 +269,22 @@ footer {
   border-radius: 5px;
   border: 1px solid white;
   box-shadow: 3px 3px 20px 0px #000000;
+}
+
+.contact-text-box {
+  margin-top: 40px;
+  background-color: #caefd3;
+  text-align: center;
+  color: #000000;
+  box-shadow: 1px 1px 10px 0px #000000;
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, Helvetica, sans-serif;
+  font-variant: small-caps;
+  margin: auto;
+  max-width: 800px;
+  margin-top: 40px;
 }
 
 form {
@@ -359,7 +396,7 @@ figure {
   font-size: 45px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 720px) {
   .jackets {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -410,5 +447,108 @@ figure {
 
   .product a {
     margin: auto;
+  }
+}
+
+/* Shopping cart page */
+
+.cart {
+  background-color: #caefd3;
+  color: #000000;
+  box-shadow: 1px 1px 10px 0px #000000;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 15px;
+  line-height: 40px;
+  margin-bottom: 50px;
+  margin: 0 auto;
+  max-width: 500px;
+  margin-top: 10px;
+}
+
+.checkout-button {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.cart-background {
+  padding: 5px 20px 15px 20px;
+
+  border-radius: 3px;
+}
+
+.products-cart {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -16px;
+  font-size: 20px;
+}
+
+.amount {
+  flex: 25%;
+}
+
+.cartimage {
+  margin-right: 20px;
+}
+
+span.price {
+  float: right;
+  color: rgb(0, 0, 0);
+}
+
+.carttext {
+  position: relative;
+  bottom: 20px;
+}
+
+/* Checkout page */
+
+.checkout {
+  background-color: #caefd3;
+  color: #000000;
+  box-shadow: 1px 1px 10px 0px #000000;
+  padding-bottom: 1px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-variant: small-caps;
+  margin: auto;
+  max-width: 800px;
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+
+.bigform {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+.checkout-form {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.checkout-input {
+  padding: 5px;
+  max-width: 500px;
+}
+
+@media (max-width: 720px) {
+  .bigform {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .checkout-input {
+    margin: auto;
+  }
+
+  .checkout-form {
+    margin-bottom: 10px;
   }
 }

@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="description" content="Shopping cart Rainy Days" />
+    <meta name="description" content="Checkout Rainy Days" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -28,25 +28,40 @@
     </header>
     <main>
       <a href="index.html"> <img src="images/logosmall.png" class="logo" alt="Rainy Days Logo" /></a>
-      <section class="cart">
-        <h1>Your shopping cart</h1>
-        <div class="products-cart">
-        <div class="amount">
-          <div class="cart-background">
-            <p><img src="/images/RainyDays_Jacket1cart.png" class="cartimage"><span class="carttext">Rainy Days Jacket one</span>
-              <span class="price"><b>$58</span></b></p>
-            <p><img src="/images/RainyDays_Jacket1cart.png" class="cartimage"><span class="carttext">Rainy Days Jacket two</span>
-              <span class="price"><b>$29</span></b></p>
-            <hr />
-            <p>
-              Total <span class="price"><b>$87</b></span>
-            </p>
-          </div>
-        </div>   
+      <section class="checkout">
+        <h1>Checkout</h1>
+        <form action="form-success.php" method="GET" class="bigform">
+          <fieldset>
+            <legend>Personal details</legend>
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" class="checkout-form checkout-input" required />
+            <label for="phone">Phone</label>
+            <input type="tel" name="phone" id="phone" class="checkout-form checkout-input" />
+            <label for="email">email</label>
+            <input type="email" name="email" id="email" class="checkout-form checkout-input" required />
+            <label for="email">Street</label>
+            <input type="email" name="email" id="email" class="checkout-form checkout-input" required />
+            <label for="email">House nr</label>
+            <input type="email" name="email" id="email" class="checkout-form checkout-input" required />
+            <label for="email">City</label>
+            <input type="email" name="email" id="email" class="checkout-form checkout-input" required />
+            <label for="email">Postal Code</label>
+            <input type="email" name="email" id="email" class="checkout-form checkout-input" required />
+          </fieldset>
+          <fieldset>
+            <legend>Payment information</legend>
+            <label for="name">CC number</label>
+            <input type="text" name="name" id="name" class="checkout-form checkout-input" required />
+            <label for="phone">Exp.date</label>
+            <input type="tel" name="phone" id="phone" class="checkout-form checkout-input" />
+            <label for="email">CVC-code</label>
+            <input type="email" name="email" id="email" class="checkout-form checkout-input" required />
+          </fieldset>
+        </form>
+        <div class="checkout-button">
+          <a href="success.html" class="cta-button">Checkout</a>
+        </div>
       </section>
-      <div class="checkout-button">
-        <a href="checkout.html" class="cta-button">Checkout</a>
-      </div>
     </main>
     <footer>
       <section class="footer">

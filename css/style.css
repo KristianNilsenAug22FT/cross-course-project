@@ -68,6 +68,8 @@ nav {
   line-height: 40px;
 }
 
+
+
 #menu-checkbox:checked ~ nav {
   display: block;
 }
@@ -84,7 +86,9 @@ nav {
   padding-right: 10px;
 }
 
-
+nav .nav-button {
+  color: #ffffff;
+}
 
 nav a {
   text-decoration: none;
@@ -152,12 +156,9 @@ footer {
     display: block;
   }
 
-  nav a {
-    color: #ffffff;
-  }
 }
 
-@media (min-width: 600px) {
+@media (min-width: 720px) {
   nav {
     display: inline;
     background-color: #7aa385;
@@ -179,6 +180,12 @@ footer {
     position: sticky;
     left: 1250px;
   }
+
+  nav .nav-button {
+    color: #000000;
+  }
+
+
 }
 
 /* Main page */

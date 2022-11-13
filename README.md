@@ -1,40 +1,29 @@
-# Project Title
+# My Rainy Days Project
 
-A simple overview of use/purpose.
+My HTML and CSS CA project
 
 ## Description
 
-An in-depth paragraph about your project and overview of use.
+The design has evolved as I learned HTML and CSS.
+I changed the top menu to scale to smaller screens insted of hding it like in the design.
+Added a footer aswell because it looks and feels better.
+I also changed the cart and buyout page because I think it didn't look right on the design.
 
-## Getting Started
+## My design
 
-### Dependencies
+https://www.figma.com/file/EQJ7LJbpAjgtx4jvzlYbRB/Rainy-Days?node-id=0%3A1&t=Mq9oRd0fgyPXwMpj-1
 
-* Describe any prerequisites, libraries, OS version, etc., needed before installing the program.
-* ex. Windows 10
+## My deployed site
 
-### Installing
+https://glittery-praline-e7ad88.netlify.app/index.html
 
-* How/where to download your program
-* Any modifications needed to be made to files/folders
+## This github
 
-### Executing program
+https://github.com/KristianNilsenAug22FT/Project
 
-- hosted link 
+### References
 
-OR
-
-* How to run the program
-* Step-by-step bullets
-
-code blocks for commands
-
-## Help
-
-Any advice for common problems or issues.
-
-- command to run if the program contains helper info
-
-## Authors
-
-Contributors' names and contact info
+Background images:
+Women clothes - Photo by Jisca Lucia on Unsplash
+Mens clothes - Photo by suraj kardile on Unsplash
+Menu background - Photo by Nina Luong on Unsplash

@@ -473,11 +473,11 @@ figure {
   text-align: center;
   margin-top: 20px;
   margin-bottom: 40px;
+  
 }
 
 .cart-background {
   padding: 5px 20px 15px 20px;
-
   border-radius: 3px;
 }
 
@@ -561,3 +561,5 @@ span.price {
     margin-bottom: 10px;
   }
 }
+
+

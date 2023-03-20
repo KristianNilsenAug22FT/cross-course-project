@@ -1,7 +1,6 @@
 body {
   text-decoration: none;
   font-family: "Bebas Neue", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-
 }
 
 .regular-background {
@@ -11,7 +10,6 @@ body {
 }
 
 h1 {
-  
   font-size: 40px;
   color: #0a3641;
   text-align: center;
@@ -23,7 +21,7 @@ h1 {
   background-color: #caefd3;
   text-align: center;
   color: #000000;
-  box-shadow: 1px 1px 10px 0px #000000;
+  box-shadow: 1px 1px 10px 0px #ac8d8d;
   padding-bottom: 20px;
   display: flex;
   flex-direction: column;
@@ -67,8 +65,6 @@ nav {
   padding-right: 30px;
   line-height: 40px;
 }
-
-
 
 #menu-checkbox:checked ~ nav {
   display: block;
@@ -155,7 +151,6 @@ footer {
   .footer {
     display: block;
   }
-
 }
 
 @media (min-width: 720px) {
@@ -184,8 +179,6 @@ footer {
   nav .nav-button {
     color: #000000;
   }
-
-
 }
 
 /* Main page */
@@ -473,7 +466,6 @@ figure {
   text-align: center;
   margin-top: 20px;
   margin-bottom: 40px;
-  
 }
 
 .cart-background {
@@ -561,5 +553,3 @@ span.price {
     margin-bottom: 10px;
   }
 }
-
-

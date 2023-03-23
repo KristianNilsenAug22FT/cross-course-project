@@ -10,10 +10,16 @@ body {
 }
 
 h1 {
-  font-size: 40px;
+  font-size: 20px;
   color: #0a3641;
   text-align: center;
-  text-decoration: underline;
+  letter-spacing: 5px;
+  background-color: #ffffff;
+
+  margin: auto;
+  margin-top: 50px;
+  border: black;
+  box-shadow: 0px 0px 9px 0px black;
 }
 
 .text-box {
@@ -21,7 +27,8 @@ h1 {
   background-color: #caefd3;
   text-align: center;
   color: #000000;
-  box-shadow: 1px 1px 10px 0px #ac8d8d;
+  border: black;
+  box-shadow: 0px 0px 3px 0px black inset;
   padding-bottom: 20px;
   display: flex;
   flex-direction: column;
@@ -32,7 +39,7 @@ h1 {
 
 .cta-button {
   text-decoration: none;
-  background-color: #caefd3;
+  background-color: #ffffff;
   width: 120px;
   text-align: center;
   color: #000000;
@@ -45,12 +52,24 @@ h1 {
   padding-inline: 10px;
 }
 
+.cta-button:hover {
+  background-color: #caefd377;
+}
+
+.burgermenuimage {
+  height: 30px;
+}
+
 header {
-  background-color: #7aa385;
+  background-color: #ffffff;
   border: black;
   box-shadow: 0px 0px 3px 0px black inset;
   padding: 0.5px;
   height: 58px;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  position: fixed;
 }
 
 header img {
@@ -59,7 +78,7 @@ header img {
 
 nav {
   display: none;
-  position: absolute;
+  position: fixed;
   background-color: #000000;
   border-radius: 3px;
   padding-right: 30px;
@@ -77,9 +96,7 @@ nav {
 .navtext {
   color: #0a3641;
   font-size: larger;
-  position: relative;
-  right: 50%;
-  padding-right: 10px;
+  position: fixed;
 }
 
 nav .nav-button {
@@ -101,7 +118,7 @@ nav a {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 10px;
+  margin-top: 80px;
 }
 
 footer {
@@ -109,7 +126,7 @@ footer {
   bottom: 0;
   right: 0;
   width: 100%;
-  background-color: #7aa385;
+  background-color: #ffffff;
   height: 25px;
   text-align: center;
   border: black;
@@ -156,9 +173,11 @@ footer {
 @media (min-width: 720px) {
   nav {
     display: inline;
-    background-color: #7aa385;
+    background-color: #ffffff;
+    border: black;
+    box-shadow: 0px 0px 3px 0px black inset;
     border-radius: 0px;
-    padding-right: 0px;
+    padding-right: 30px;
     line-height: initial;
   }
 
@@ -172,12 +191,16 @@ footer {
     display: none;
   }
   .navtext {
-    position: sticky;
-    left: 1250px;
+    position: fixed;
+    right: 20px;
   }
 
   nav .nav-button {
     color: #000000;
+  }
+
+  h1 {
+    width: 400px;
   }
 }
 
@@ -231,8 +254,9 @@ footer {
 
 .about-text-box {
   margin-top: 40px;
-  background-color: #caefd3;
-  text-align: center;
+  background-color: #ffffff;
+  text-align: left;
+  padding-left: 50px;
   color: #000000;
   box-shadow: 1px 1px 10px 0px #000000;
   padding-bottom: 20px;
@@ -245,6 +269,10 @@ footer {
   margin-top: 40px;
 }
 
+.about-text-box h1 {
+  margin-bottom: 50px;
+}
+
 .back-button {
   display: flex;
   justify-content: center;
@@ -255,7 +283,7 @@ footer {
 /* Contact page */
 
 .submit {
-  background-color: #caefd3;
+  background-color: #ffffff;
   margin-top: 10px;
   width: fit-content;
   padding: 10px;
@@ -270,10 +298,14 @@ footer {
   font-size: 25px;
 }
 
+.submit:hover {
+  background-color: #caefd377;
+}
+
 .contact-text-box {
   margin-top: 40px;
-  background-color: #caefd3;
-  text-align: center;
+  background-color: #ffffff;
+  text-align: left;
   color: #000000;
   box-shadow: 1px 1px 10px 0px #000000;
   padding-bottom: 20px;
@@ -284,10 +316,16 @@ footer {
   margin: auto;
   max-width: 800px;
   margin-top: 40px;
+  padding: 50px;
+}
+
+.contact-text-box h1 {
+  margin-bottom: 50px;
 }
 
 form {
-  margin-top: 20px;
+  margin-top: 50px;
+  text-align: center;
 }
 
 .form__input {
@@ -334,10 +372,9 @@ form {
 }
 
 .jackets__spesific {
-  background-color: #caefd3;
+  background-color: #ffffff;
   color: #000000;
   box-shadow: 1px 1px 10px 0px #000000;
-  border-radius: 10px;
   text-align: center;
   padding-bottom: 20px;
   margin-bottom: 40px;
@@ -364,6 +401,8 @@ form {
 
 figure {
   flex: 1;
+  box-shadow: 1px 1px 10px 0px #000000;
+  background-color: #ffffff;
 }
 
 .figuresmall {
@@ -372,7 +411,7 @@ figure {
 
 .text-box-product {
   margin-top: 40px;
-  background-color: #caefd3;
+  background-color: #ffffff;
   color: #000000;
   box-shadow: 1px 1px 10px 0px #000000;
   padding-bottom: 20px;
@@ -393,7 +432,7 @@ figure {
   font-size: 45px;
 }
 
-@media (max-width: 720px) {
+@media (max-width: 990px) {
   .jackets {
     display: grid;
     grid-template-columns: repeat(2, 1fr);

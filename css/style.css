@@ -600,18 +600,35 @@ span.price {
 }
 
 .bigform {
-  display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-bottom: 20px;
+  
   padding-top: 20px;
 }
 
+.form-section {
+  display: inline-flex;
+  }
 
+.form-section #streetnr {
+  width: 25px;
+  margin-left: 15px;
+}
 
+.form-section #postal {
+  width: 40px;
+}
 
-#checkoutbutton {
-  color: #029e29;
+.streetnr {
+  margin-left: 15px;
+}
+
+legend {
+  margin-bottom: 20px;
+}
+
+.ccinfo {
+  
 }
 
 
@@ -623,8 +640,22 @@ span.price {
     text-align: center;
   }
 
+  .form-section {
+    display: block;
+  }
 
 
+  
+  .form-section #streetnr {
+    margin-left: auto;
+  }
+
+  .streetnr {
+    margin-left: auto;
+  }
+  
+
+ 
 }
 
 

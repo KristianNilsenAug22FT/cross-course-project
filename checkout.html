@@ -25,6 +25,7 @@
         a.appendChild(r);
       })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
     </script>
+    <script defer src="./js/checkout.js"></script>
   </head>
   <body class="regular-background cart-body">
     <header>
@@ -46,39 +47,47 @@
       <a href="index.html"> <img src="images/logosmall.png" class="logo" alt="Rainy Days Logo" /></a>
       <section class="checkout">
         <h1 class="checkout-h1">Checkout</h1>
-        <form action="form-success.php" method="GET" class="bigform">
+        <form id="checkoutform" action="form-success.php" method="GET" class="bigform">
           <fieldset>
             <legend>Personal details</legend>
-            <label for="name">Name</label>
-            <input type="text" name="name" id="name" class="checkout-form checkout-input" required />
-            <label for="phone">Phone</label>
-            <input type="tel" name="phone" id="phone" class="checkout-form checkout-input" />
-            <label for="email">email</label>
-            <input type="email" name="email" id="email" class="checkout-form checkout-input" required />
-            <label for="street">Street</label>
-            <input type="text" name="street" id="street" class="checkout-form checkout-input" required />
-            <label for="housenr">House nr</label>
-            <input type="number" name="housenr" id="housenr" class="checkout-form checkout-input" required />
-            <label for="city">City</label>
-            <input type="text" name="city" id="city" class="checkout-form checkout-input" required />
+            <label for="name">Your name</label>
+            <input type="text" name="name" id="name" class="form__input" />
+            <div class="input-error" id="nameError">We need your name</div>
+            <label for="phone">Phone number</label>
+            <input type="text" name="phone" id="phone" class="form__input" />
+            <div class="input-error" id="phoneError">Phone number must be minimum 8 digits</div>
+            
+            <label for="email">Your email(must be a valid email)</label>
+            <input type="email" name="email" id="email" class="form__input" />
+            <div class="input-error" id="emailError">Please enter a valid email address</div>
+
+
+            <label for="street">Street and house number</label>
+            <input type="text" name="street" id="street" class="form__input"  />
+            <div class="input-error" id="streetError">Must be a street name and a street number</div>
+
             <label for="postcode">Postal Code</label>
-            <input type="number" name="postcode" id="postcode" class="checkout-form checkout-input" required />
+            <input type="number" name="postcode" id="postcode" class="checkout-form checkout-input"  />
+
+            <label for="city">City</label>
+            <input type="text" name="city" id="city" class="checkout-form checkout-input"  />
+           
+
           </fieldset>
           <fieldset>
             <legend>Payment information</legend>
             <label for="creditcard">CC number</label>
-            <input type="number" name="creditcard" id="creditcard" class="checkout-form checkout-input" required />
+            <input type="number" name="creditcard" id="creditcard" class="checkout-form checkout-input"  />
             <label for="expdate">Exp.date</label>
-            <input type="date" name="expdate" id="expdate" class="checkout-form checkout-input" required />
+            <input type="date" name="expdate" id="expdate" class="checkout-form checkout-input"  />
             <label for="expmonth">Exp.month</label>
-            <input type="month" name="expmonth" id="expmonth" class="checkout-form checkout-input" required />
+            <input type="month" name="expmonth" id="expmonth" class="checkout-form checkout-input"  />
             <label for="cvc">CVC-code</label>
-            <input type="number" name="cvc" id="cvc" class="checkout-form checkout-input" required />
+            <input type="number" name="cvc" id="cvc" class="checkout-form checkout-input"  />
           </fieldset>
+          <input type="submit" value="SUBMIT" class="cta-button" />
         </form>
-        <div class="checkout-button">
-          <a href="success.html" class="cta-button">BUY</a>
-        </div>
+   
       </section>
     </main>
     <footer>

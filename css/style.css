@@ -10,10 +10,16 @@ body {
 }
 
 h1 {
-  font-size: 40px;
+  font-size: 20px;
   color: #0a3641;
   text-align: center;
-  text-decoration: underline;
+  letter-spacing: 5px;
+  background-color: #ffffff;
+  margin: auto;
+  margin-top: 50px;
+  border: black;
+  box-shadow: 0px 0px 9px 0px black;
+  padding: 5px;
 }
 
 .text-box {
@@ -21,7 +27,8 @@ h1 {
   background-color: #caefd3;
   text-align: center;
   color: #000000;
-  box-shadow: 1px 1px 10px 0px #ac8d8d;
+  border: black;
+  box-shadow: 0px 0px 3px 0px black inset;
   padding-bottom: 20px;
   display: flex;
   flex-direction: column;
@@ -32,25 +39,36 @@ h1 {
 
 .cta-button {
   text-decoration: none;
-  background-color: #caefd3;
+  background-color: #ffffff;
   width: 120px;
   text-align: center;
   color: #000000;
   display: inline-block;
   font-size: x-large;
-  border-radius: 5px;
   border: 1px solid white;
   box-shadow: 3px 3px 20px 0px #000000;
   padding-block: 5px;
   padding-inline: 10px;
 }
 
+.cta-button:hover {
+  background-color: #caefd377;
+}
+
+.burgermenuimage {
+  height: 30px;
+}
+
 header {
-  background-color: #7aa385;
+  background-color: #ffffff;
   border: black;
   box-shadow: 0px 0px 3px 0px black inset;
   padding: 0.5px;
   height: 58px;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  position: fixed;
 }
 
 header img {
@@ -59,11 +77,14 @@ header img {
 
 nav {
   display: none;
-  position: absolute;
-  background-color: #000000;
+  position: fixed;
+  background-color: #ffffff;
   border-radius: 3px;
   padding-right: 30px;
   line-height: 40px;
+  border: #000000;
+  box-shadow: 0px 0px 3px 0px black inset;
+  margin-top: 5px;
 }
 
 #menu-checkbox:checked ~ nav {
@@ -77,13 +98,12 @@ nav {
 .navtext {
   color: #0a3641;
   font-size: larger;
-  position: relative;
-  right: 50%;
-  padding-right: 10px;
+  position: fixed;
 }
 
 nav .nav-button {
-  color: #ffffff;
+  color: #000000;
+  
 }
 
 nav a {
@@ -97,11 +117,23 @@ nav a {
   background-color: #caefd377;
 }
 
+li {
+  list-style-type: none;
+}
+
+.shoppingcart-icon {
+  display: inline;
+  margin-bottom: -5px;
+  margin-top: -18px;
+  max-width: 24px;
+  
+}
+
 .logo {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 10px;
+  margin-top: 80px;
 }
 
 footer {
@@ -109,7 +141,7 @@ footer {
   bottom: 0;
   right: 0;
   width: 100%;
-  background-color: #7aa385;
+  background-color: #ffffff;
   height: 25px;
   text-align: center;
   border: black;
@@ -130,6 +162,7 @@ footer {
   text-decoration: none;
   color: #0a3641;
 }
+
 
 @media (max-width: 1200px) {
   .navtext {
@@ -156,10 +189,13 @@ footer {
 @media (min-width: 720px) {
   nav {
     display: inline;
-    background-color: #7aa385;
+    background-color: #ffffff;
+    border: black;
+    box-shadow: 0px 0px 3px 0px black inset;
     border-radius: 0px;
-    padding-right: 0px;
+    padding-right: 30px;
     line-height: initial;
+    margin-top: 0px;
   }
 
   nav li {
@@ -172,12 +208,16 @@ footer {
     display: none;
   }
   .navtext {
-    position: sticky;
-    left: 1250px;
+    position: fixed;
+    right: 20px;
   }
 
   nav .nav-button {
     color: #000000;
+  }
+
+  h1 {
+    width: 400px;
   }
 }
 
@@ -231,8 +271,9 @@ footer {
 
 .about-text-box {
   margin-top: 40px;
-  background-color: #caefd3;
-  text-align: center;
+  background-color: #ffffff;
+  text-align: left;
+  padding-left: 50px;
   color: #000000;
   box-shadow: 1px 1px 10px 0px #000000;
   padding-bottom: 20px;
@@ -245,6 +286,10 @@ footer {
   margin-top: 40px;
 }
 
+.about-text-box h1 {
+  margin-bottom: 50px;
+}
+
 .back-button {
   display: flex;
   justify-content: center;
@@ -255,7 +300,7 @@ footer {
 /* Contact page */
 
 .submit {
-  background-color: #caefd3;
+  background-color: #ffffff;
   margin-top: 10px;
   width: fit-content;
   padding: 10px;
@@ -270,10 +315,15 @@ footer {
   font-size: 25px;
 }
 
+.submit:hover {
+  background-color: #caefd377;
+}
+
 .contact-text-box {
   margin-top: 40px;
-  background-color: #caefd3;
-  text-align: center;
+  background-color: #ffffff;
+  text-align: left;
+  padding-left: 50px;
   color: #000000;
   box-shadow: 1px 1px 10px 0px #000000;
   padding-bottom: 20px;
@@ -286,8 +336,13 @@ footer {
   margin-top: 40px;
 }
 
+.contact-text-box h1 {
+  margin-bottom: 50px;
+}
+
 form {
-  margin-top: 20px;
+  margin-top: 50px;
+  text-align: center;
 }
 
 .form__input {
@@ -334,10 +389,9 @@ form {
 }
 
 .jackets__spesific {
-  background-color: #caefd3;
+  background-color: #ffffff;
   color: #000000;
   box-shadow: 1px 1px 10px 0px #000000;
-  border-radius: 10px;
   text-align: center;
   padding-bottom: 20px;
   margin-bottom: 40px;
@@ -364,6 +418,8 @@ form {
 
 figure {
   flex: 1;
+  box-shadow: 1px 1px 10px 0px #000000;
+  background-color: #ffffff;
 }
 
 .figuresmall {
@@ -372,7 +428,7 @@ figure {
 
 .text-box-product {
   margin-top: 40px;
-  background-color: #caefd3;
+  background-color: #ffffff;
   color: #000000;
   box-shadow: 1px 1px 10px 0px #000000;
   padding-bottom: 20px;
@@ -393,7 +449,7 @@ figure {
   font-size: 45px;
 }
 
-@media (max-width: 720px) {
+@media (max-width: 990px) {
   .jackets {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -450,16 +506,21 @@ figure {
 /* Shopping cart page */
 
 .cart {
-  background-color: #caefd3;
+  margin-top: 40px;
+  background-color: #ffffff;
+  text-align: left;
   color: #000000;
   box-shadow: 1px 1px 10px 0px #000000;
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
   font-family: Arial, Helvetica, sans-serif;
-  padding: 15px;
-  line-height: 40px;
-  margin-bottom: 50px;
-  margin: 0 auto;
+  font-variant: small-caps;
+  margin: auto;
   max-width: 500px;
-  margin-top: 10px;
+  margin-top: 40px;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 .checkout-button {
@@ -478,6 +539,7 @@ figure {
   flex-wrap: wrap;
   margin: 0 -16px;
   font-size: 20px;
+  margin-top: 50px;
 }
 
 .amount {
@@ -496,12 +558,14 @@ span.price {
 .carttext {
   position: relative;
   bottom: 20px;
+  
 }
+
 
 /* Checkout page */
 
 .checkout {
-  background-color: #caefd3;
+  background-color: #ffffff;
   color: #000000;
   box-shadow: 1px 1px 10px 0px #000000;
   padding-bottom: 1px;
@@ -511,6 +575,12 @@ span.price {
   max-width: 800px;
   margin-top: 30px;
   margin-bottom: 40px;
+  padding-top: 20px;
+}
+
+.checkout-h1 {
+  margin-top: 20px;
+  margin-bottom: 50px;
 }
 
 .checkout .cta-button {
@@ -538,6 +608,8 @@ span.price {
   max-width: 500px;
 }
 
+
+
 @media (max-width: 720px) {
   .bigform {
     display: flex;
@@ -552,4 +624,23 @@ span.price {
   .checkout-form {
     margin-bottom: 10px;
   }
+}
+
+
+/* Success page */
+
+.success-textbox {
+  margin-top: 40px;
+  background-color: #ffffff;
+  text-align: center;
+  color: #000000;
+  box-shadow: 1px 1px 10px 0px #000000;
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, Helvetica, sans-serif;
+  font-variant: small-caps;
+  margin: auto;
+  max-width: 800px;
+  margin-top: 40px;
 }

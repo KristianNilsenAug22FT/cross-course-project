@@ -50,15 +50,16 @@
         <form id="checkoutform" action="form-success.php" method="GET" class="bigform">
           <fieldset>
             <legend>Personal details</legend>
-            <label for="name">Your name</label>
-            <input type="text" name="name" id="name" class="form__input" />
-            <div class="input-error" id="nameError">We need your name</div>
-            <label for="phone">Phone number (Minimum 8 digits)</label>
-            <input type="text" name="phone" id="phone" class="form__input" />
-            <div class="input-error" id="phoneError">Phone number must be minimum 8 digits</div>
-            <label for="email">Your email(must be a valid email)</label>
-            <input type="email" name="email" id="email" class="form__input" />
-            <div class="input-error" id="emailError">Please enter a valid email address</div>
+              <label for="name">Your name</label>
+                <input type="text" name="name" id="name" class="form__input" />
+                <div class="input-error" id="nameError">Name can only be letters</div>
+                <div class="input-error" id="namelengthError">We need your name</div>
+              <label for="phone">Phone number (Minimum 8 digits)</label>
+                <input type="number" name="phone" id="phone" class="form__input" />
+                <div class="input-error" id="phoneError">Phone number must be minimum 8 digits</div>
+              <label for="email">Your email(must be a valid email)</label>
+                <input type="email" name="email" id="email" class="form__input" />
+                <div class="input-error" id="emailError">Please enter a valid email address</div>
             <section class="form-section">
               <div>
                 <label for="street">Street</label>
@@ -66,15 +67,15 @@
                 <div class="input-error" id="streetError">Street name is required</div>
               </div>
               <div>
-                <label for="streetnr" class="streetnr">Nr.</label>
-                <input type="text" name="nr" id="streetnr" class="form__input"  />
+                <label for="streetnr">Nr.</label>
+                <input type="number" name="nr" id="streetnr" class="form__input"  />
                 <div class="input-error" id="streetnrError">Street number is required</div>
               </div>
               </section>
               <div></div>
               <section class="form-section">
               <div>
-                <label for="postal">Postcode</label>
+                <label for="postal">Zip</label>
                 <input type="number" name="postal" id="postal" class="form__input"  />
                 <div class="input-error" id="postalError">Postal code is required</div>
               </div>
@@ -87,17 +88,19 @@
           </fieldset>
           <fieldset>
             <legend>Payment information</legend>
-              <section class="ccinfo">
-                <label for="postal">Creditcard number</label>
+              <section class="form-section">
+                <label for="ccnumber">Creditcard number</label>
                 <input type="number" name="ccnumber" id="ccnumber" class="form__input"  />
                 <div class="input-error" id="ccnumberError">Creditcard number must be 16 digits</div>
 
                 <label for="expdate">Exp. date</label>
-                <input type="date" name="expdate" id="expdate" class="form__input"  />
-                <div class="input-error" id="expdateError">Creditcard number must be 16 digits</div>
+                <input type="month" name="expdate" id="expdate" class="form__input"  />
+                <div class="input-error" id="expdateError">Expiration month and year required</div>
 
                 <label for="cvc">CVC-code</label>
-                <input type="number" name="cvc" id="cvc" class="checkout-form checkout-input"  />
+                <input type="number" name="cvc" id="cvc" class="form__input"  />
+                <div class="input-error" id="cvcError">CVC-code is 3 digits</div>
+
               </section>
           </fieldset>
           <input type="submit" value="SUBMIT" class="cta-button" />

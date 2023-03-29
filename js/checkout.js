@@ -11,9 +11,12 @@ const userStreet = document.querySelector("#street");
 const userStreetError = document.querySelector("#streetError");
 const userStreetnr = document.querySelector("#streetnr");
 const userStreetnrError = document.querySelector("#streetnrError");
-
 const userPostal = document.querySelector("#postal");
 const userPostalError = document.querySelector("#postalError");
+const userCity = document.querySelector("#city");
+const userCityError = document.querySelector("#cityError");
+
+
 
 function validateForm() {
   event.preventDefault();
@@ -60,8 +63,11 @@ function validateForm() {
     userStreetnrError.style.display = "block";
   }
 
-
-
+  if (checkLength(userCity.value, 0) === true) {
+    userCityError.style.display = "none";
+  } else {
+    userCityError.style.display = "block";
+  }
 
 
 

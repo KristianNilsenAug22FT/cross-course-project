@@ -131,11 +131,15 @@ li {
 }
 
 .logo {
-  display: block;
+  display: flex;
+  flex-direction: column;
   margin-left: auto;
   margin-right: auto;
   margin-top: 80px;
+  max-width: 200px;
 }
+
+
 
 footer {
   position: fixed;
@@ -176,6 +180,8 @@ legend {
 }
 
 
+
+
 @media (max-width: 1200px) {
   .navtext {
     display: none;
@@ -189,9 +195,6 @@ legend {
     background-position: 50% 15%;
   }
 
-  .logo {
-    max-width: 80%;
-  }
 
   .footer {
     display: block;
@@ -234,6 +237,15 @@ legend {
 }
 
 /* Main page */
+
+.logoindex {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 80px;
+  max-width: 100%;
+ 
+}
 
 .home-cta-spacing {
   margin-inline: 100px;

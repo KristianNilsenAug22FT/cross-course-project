@@ -15,8 +15,10 @@ const userPostal = document.querySelector("#postal");
 const userPostalError = document.querySelector("#postalError");
 const userCity = document.querySelector("#city");
 const userCityError = document.querySelector("#cityError");
-
-
+const userCreditCard = document.querySelector("#CreditCard");
+const userCreditCardError = document.querySelector("#CreditCardError");
+const userCvc = document.querySelector("#cvc");
+const userCvcError = document.querySelector("#cvcError");
 
 function validateForm() {
   event.preventDefault();
@@ -44,7 +46,7 @@ function validateForm() {
   } else {
     userEmailError.style.display = "block";
   }
-  
+
   if (checkLength(userStreet.value, 0) === true) {
     userStreetError.style.display = "none";
   } else {
@@ -69,8 +71,17 @@ function validateForm() {
     userCityError.style.display = "block";
   }
 
+  if (checkLength(userCreditCard.value, 14) === true) {
+    userCreditCardError.style.display = "none";
+  } else {
+    userCreditCardError.style.display = "block";
+  }
 
-
+  if (checkLength(userCvc.value, 0) === true) {
+    userCvc.style.display = "none";
+  } else {
+    userCvcError.style.display = "block";
+  }
 }
 
 form.addEventListener("submit", validateForm);
@@ -94,4 +105,3 @@ function validateLetters(name) {
   const patternMatches = regEx.test(name);
   return patternMatches;
 }
-

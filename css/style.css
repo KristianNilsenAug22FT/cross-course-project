@@ -395,51 +395,50 @@ form {
   background-size: cover;
 }
 
-.jackets img {
-  width: 100%;
-  grid-column: -1/1;
+#jackets a {
+  text-decoration: none;
 }
 
-.jackets {
+#jackets img {
+  width: 100%;
+  min-width: 200px;
+}
+
+.jacket h2 {
+  font-weight: 300;
+}
+
+#jackets {
   display: grid;
+  grid-column: -1/1;
   grid-template-columns: repeat(4, 1fr);
   max-width: 1500px;
   grid-gap: 40px;
   margin: auto;
+  margin-top: 50px; 
+  margin-bottom: 50px;
 }
 
-.jackets p {
+ #jackets p {
   font-size: 25px;
   color: #029e29;
   font-weight: 800;
+  text-align: center;
 }
 
-.jackets__spesific {
+.jacket {
   background-color: #ffffff;
   color: #000000;
   box-shadow: 1px 1px 10px 0px #000000;
   text-align: center;
   padding-bottom: 20px;
   margin-bottom: 40px;
+  padding: 20px;
+  text-decoration: none;
 }
 
-.jackets h1 {
-  grid-column: -1/1;
-}
-
-.jackets__spesific p {
-  color: #317c44;
-  background-color: #ffffff;
-  border-radius: 50%;
-  max-width: 100px;
-  margin: auto;
-  margin-bottom: 20px;
-}
-
-.product {
-  display: flex;
-  margin: 0 auto;
-  max-width: 1000px;
+.jacket:hover {
+  box-shadow: 1px 1px 10px 0px #3b9752;
 }
 
 figure {
@@ -476,15 +475,6 @@ figure {
 }
 
 @media (max-width: 990px) {
-  .jackets {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    max-width: 600px;
-    margin: auto;
-  }
-  .jackets img {
-    width: 50%;
-  }
 
   .women-background {
     background-size: cover;
@@ -528,6 +518,91 @@ figure {
     margin: auto;
   }
 }
+
+@media (max-width: 1100px) {
+  #jackets {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 600px;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 560px) {
+  #jackets {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    max-width: 300px;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+}
+
+/* Specific product page */
+
+.product {
+  margin: auto;
+  max-width: 1000px;
+}
+
+#jacket {
+  margin-top: 70px;
+  background-color: #ffffff;
+  color: #000000;
+  box-shadow: 1px 1px 10px 0px #000000;
+  padding-bottom: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 10px;
+  line-height: 40px;
+  margin-bottom: 50px;
+  
+}
+
+#jacket p {
+  font-size: 20px;
+  text-align: center;
+}
+
+#jacket h2 {
+  font-size: 30px;
+  text-align: center;
+}
+
+#jacket img {
+  max-height: 500px;
+  display: flex;
+  margin: auto;
+}
+
+button {
+  background-color: #ffffff;
+  width: 200px;
+  color: #000000;
+  font-size: 30px;
+  border: 1px solid white;
+  box-shadow: 3px 3px 20px 0px #000000;
+  padding-block: 5px;
+  padding-inline: 10px;
+  margin: 0 50%;
+  position: relative;
+  left: -100px;
+}
+
+button:hover {
+  box-shadow: 1px 1px 10px 0px #3b9752;
+  color: #3b9752;
+}
+
+@media (max-width: 560px) {
+#jacket img {
+  max-width: 100%
+  }
+}
+
+
 
 /* Shopping cart page */
 

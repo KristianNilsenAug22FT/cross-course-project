@@ -21,6 +21,10 @@ https://glittery-praline-e7ad88.netlify.app/index.html
 
 https://github.com/KristianNilsenAug22FT/Project
 
+## Remote host
+
+http://norwegiantechie.icu (Wordpress)
+
 ### References
 
 Background images:

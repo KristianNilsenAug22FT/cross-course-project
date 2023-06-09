@@ -1,33 +1,66 @@
-# My Rainy Days Project
+# Rainy Days Jackets
 
-My HTML and CSS CA project
+![theboatblog](https://github.com/Noroff-FEU-Assignments/project-exam-1-KristianNilsenAug22FT/assets/114563561/3458a0b5-08bf-4f35-b2b0-4f0835d57ae0)
+
+Rainy Days is a my cross course project while studying FrontEnd development at Noroff.
+The site is a fictional online store where people can buy durable jackets.
+It uses JS and WordPress to fetch content and is focused around HTML,CSS and JS.
 
 ## Description
 
-The design has evolved as I learned HTML and CSS.
-I changed the top menu to scale to smaller screens insted of hding it like in the design.
-Added a footer aswell because it looks and feels better.
-I also changed the cart and buyout page because I think it didn't look right on the design.
+"Rainy Days" is an online store specializing in the manufacture and sale of high-quality, durable outdoor clothing. 
+Famed as the world's leading brand in this niche, it boasts an impressive array of jackets for both men and women. 
+The mission of "Rainy Days" is to equip every outdoor enthusiast with top-tier, weather-resistant clothing that not 
+only serves its functional purpose but does so without breaking the bank.
 
-## My design
+Rainy Days aims to:
 
-https://www.figma.com/file/EQJ7LJbpAjgtx4jvzlYbRB/Rainy-Days?node-id=0%3A1&t=Mq9oRd0fgyPXwMpj-1
+- Provide a comprehensive range of durable outdoor clothing, with a specific focus on jackets, designed to withstand all types of weather conditions, ensuring customer satisfaction and safety.
+- Offer competitive pricing, positioning itself as the go-to destination for cost-effective, high-quality outdoor wear in comparison to other market players.
+- Consistently innovate and maintain the highest standards of manufacturing, affirming its status as the world's leading manufacturer of durable outdoor clothes.
 
-## My deployed site
+## Built With
 
-https://glittery-praline-e7ad88.netlify.app/index.html
+- HTML
+- CSS
+- JS
+- WordPress
 
-## This github
+## Software used
 
-https://github.com/KristianNilsenAug22FT/Project
+- Figma
+- Visual Studio Code
+- WordPress (Headless)
+- Hotjar
 
-## Remote host
+## Getting Stared
 
-http://norwegiantechie.icu (Wordpress)
+### Installing
 
-### References
+Live site https://glittery-praline-e7ad88.netlify.app
 
-Background images:
-Women clothes - Photo by Jisca Lucia on Unsplash
-Mens clothes - Photo by suraj kardile on Unsplash
-Menu background - Photo by Nina Luong on Unsplash
+
+1. Clone the repo:
+
+```bash
+git clone git@github.com:KristianNilsenAug22FT/Project
+```
+
+### Running
+
+To run the app, run the following commands:
+
+```bash
+npm run start
+```
+
+## Contributing
+
+Any questions or contributions are welcome. I will be happy to answer all questions and consider all contributions.
+You can find my contact info below.
+
+## Contact
+
+[My email](mailto:nilsenkr@pm.me)
+
+[My GitHub](https://github.com/KristianNilsenAug22FT)

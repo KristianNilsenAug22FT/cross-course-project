@@ -43,7 +43,7 @@ Live site https://glittery-praline-e7ad88.netlify.app
 1. Clone the repo:
 
 ```bash
-git clone git@github.com:KristianNilsenAug22FT/Project
+git clone git@github.com:KristianNilsenAug22FT/cross-course-project
 ```
 
 ### Running

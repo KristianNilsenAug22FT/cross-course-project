@@ -1,6 +1,6 @@
 # Rainy Days Jackets
 
-![theboatblog](https://github.com/Noroff-FEU-Assignments/project-exam-1-KristianNilsenAug22FT/assets/114563561/3458a0b5-08bf-4f35-b2b0-4f0835d57ae0)
+![rainydays](https://github.com/KristianNilsenAug22FT/cross-course-project/assets/114563561/85469733-16f0-4600-afa5-84babb2e7aa7)
 
 Rainy Days is a my cross course project while studying FrontEnd development at Noroff.
 The site is a fictional online store where people can buy durable jackets.
